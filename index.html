@@ -108,6 +108,66 @@
 .zoom-effect:hover {
   transform: scale(1.1);
 }
+/* ================================
+   PROJECT SECTION STYLING
+   Clean card-based layout
+================================ */
+
+.project-card {
+  background: #111;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+}
+
+.project-image {
+  height: 220px;
+  background-size: cover;
+  background-position: center;
+}
+
+.project-content {
+  padding: 20px;
+}
+
+.project-content h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.project-content p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.project-links {
+  margin-top: 15px;
+}
+
+.project-links a {
+  font-size: 14px;
+  margin-right: 15px;
+  color: #ffbd39;
+  text-decoration: none;
+}
+
+.project-links a:hover {
+  text-decoration: underline;
+}
+
 
 
 </style>
@@ -314,25 +374,7 @@
           
         </div>
 
-		<div class="row">
-			<h1 class="big-4">Experience</h1>
-			<div class="underline"></div>
-		</div>
-		<br>
-		
-		<div class="row">
-				<div class="col-md-6">
-					<div class="resume-wrap ftco-animate">
-						<span class="date">2015-2020</span>
-						<h2>RCY Member</h2>
-						<span class="position">Bangladesh Red Crescent Society: BDRCS</span>
-						
-					</div>
 
-				</div>
-
-				
-			</div>
 
 		<br>
 		<br>
@@ -369,77 +411,100 @@
 
    
 
-    <section class="ftco-section" id="project-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-5">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Projects</h1>
-            <h2 class="mb-4">Projects</h2>
-            
+   <!-- ================================
+     PROJECTS SECTION
+     Showcase of selected works
+================================ -->
+<section class="ftco-section" id="project-section">
+  <div class="container">
+
+    <!-- Section heading -->
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-8 text-center heading-section ftco-animate">
+        <h1 class="big big-2">Projects</h1>
+        <h2 class="mb-4">Featured Projects</h2>
+        <p>A selection of projects that reflect my learning journey and practical skills.</p>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <!-- Project Card 1 -->
+      <div class="col-md-4 ftco-animate">
+        <div class="project-card">
+          
+         
+
+          <!-- Project content -->
+          <div class="project-content">
+            <h3>Spicy Store</h3>
+
+            <p>
+             Spicy Store is a modern e-commerce web application built using React, focused on clean UI, smooth navigation, and fast performance.
+            </p>
+			<p>Technologies used:</p>
+			<ol>
+				<li>React.js</li>
+				
+				<li>Tailwind CSS</li>
+				<li>daisyUI </li>
+				
+			</ol>
+
+            <!-- Project links -->
+            <div class="project-links">
+              <a href="https://shafikulnayem10.github.io/Spicy_Store/" target="_blank">Live Demo</a>
+              <a href="https://github.com/shafikulnayem10/Spicy_Store" target="_blank">GitHub Repository</a>
+            </div>
           </div>
+
         </div>
-        <div class="row d-flex">
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="https://shafikulnayem10.github.io/Spicy_Store/" class="block-20 zoom-effect" style="background-image: url('images/bannerpic.png');">
-              </a>
-              <div class="text mt-3 float-right d-block">
+      </div>
 
-                <h3 class="heading"><a href="https://shafikulnayem10.github.io/Spicy_Store/">Spicy Store</a></h3>
-                <p>an e-commerce concept built with:   <br>✅ React.js  ✅ Vite  ✅ Tailwind CSS + daisyUI  ✅ React Router DOM  ✅ GitHub Pages </p>
-              </div>
+      <!-- Project Card 2 -->
+      <div class="col-md-4 ftco-animate">
+        <div class="project-card">
+
+          
+
+          <div class="project-content">
+            <h3>Dev Hunt – Job Portal</h3>
+
+            <p>
+            Dev Hunt is a full-stack MERN-based job portal designed to connect job seekers and employers through a clean, efficient, and user-friendly platform.
+            </p>
+			<p>Technologies used:</p>
+			<ol>
+				<li>MongoDB</li>
+				<li>Express.js</li>
+				<li>React.js</li>
+				<li>Node.js</li>
+			</ol>
+			<!-- Project links -->
+            <div class="project-links">
+              <a href="https://dev-hunt-job-portal-client.onrender.com/signin" target="_blank">Live Demo</a>
+              <a href="https://github.com/shafikulnayem10/Dev-Hunt-Job-Portal-" target="_blank">GitHub Repository</a>
             </div>
           </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <a href="https://shafikulnayem10.github.io/Country_React_App/" class="block-20 zoom-effect" style="background-image: url('https://thumbs.dreamstime.com/b/europa-park-rust-germany-april-th-way-streets-amusement-259543292.jpg');">
-              </a>
-              <div class="text mt-3 float-right d-block">
 
-                <h3 class="heading"><a href="https://shafikulnayem10.github.io/Country_React_App/">Simple React Countries App</a></h3>
-                <p>A responsive React-based web application that fetches and displays real-time data on countries from a public API. Users can:
-<br>
-🌍 Browse all countries with flags, capitals, and names<br>
-✅ Mark countries as "Visited" or "Unvisited" (toggle system)<br>
-🔎 Instantly search countries by name<br>
-🧠 Built using React Hooks, and modern JSX<br>
-📦 Deployed to GitHub Pages using gh-pages<br>
-</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry">
-              <a href="https://github.com/shafikulnayem10/US-Bangla-Airline-Management-System" class="block-20 zoom-effect" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/2/2e/S2-AJA_-_Boeing_737-8Q8_-_US-Bangla_Airlines_-_MSN_30039_-_VGHS.jpg');">
-              </a>
-              <div class="text mt-3 float-right d-block">
-
-                <h3 class="heading"><a href="https://github.com/shafikulnayem10/US-Bangla-Airline-Management-System">US-Bangla-Airline-Management-System</a></h3>
-                <p>I build a java project for my object oriented programming course .
-Project Description:
-The US-Bangla Airline Management System is a Java-based desktop application for managing airline operations. It offers role-based access for admins, normal customers, and premium customers, enabling flight booking, cancellation, profile management, and customer support. Built with Java Swing, it ensures efficient flight and customer management with a user-friendly interface</p>
-              </div>
-            </div>
-          </div>
         </div>
-	<br>
-		<!-- added justify-content-center to center align the last two projects -->
-		<div class="row d-flex justify-content-center">  
-			<div class="col-md-4 d-flex ftco-animate">
-				<div class="blog-entry justify-content-end">
-				<a href="https://shafikulnayem10.github.io/To-Do-App/" class="block-20 zoom-effect" style="background-image: url('https://www.shutterstock.com/image-vector/do-list-checklist-cupboard-icon-600nw-2480380541.jpg');">
-				</a>
-				<div class="text mt-3 float-right d-block">
-  
-				  <h3 class="heading"><a href="https://shafikulnayem10.github.io/To-Do-App/">To Do App </a></h3>
-				  <p>I build a todo app using HTML,CSS & Javascript.</p>
-				</div>
-			  </div>
-			</div>
-			
-		 </div>
-	  </div>
-    </section>
+      </div>
+
+     
+
+    </div>
+
+    <!-- Additional projects note -->
+    <div class="row mt-5">
+      <div class="col-md-12 text-center ftco-animate">
+        <p>More projects and experiments are available on my GitHub profile.</p>
+        <a href="https://github.com/shafikulnayem10" class="btn btn-primary py-3 px-5">Visit GitHub</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 
 	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
       
@@ -451,7 +516,7 @@ The US-Bangla Airline Management System is a Java-based desktop application for 
 						<h2>More projects on<span> Github  </span> </h2>
 						<div class="heading"> <h4> I love to solve  problems </h4>
 						<br>
-						<p><a href="https://github.com/shafikulnayem10" class="btn btn-primary py-3 px-5">GitHub</a></p>
+						<p><a href="https://github.com/shafikulnayem10" class="btn btn-primary py-3 px-5" target="_blank">GitHub</a></p>
 						</div>
 					</div>
 				</div>
@@ -500,13 +565,7 @@ The US-Bangla Airline Management System is a Java-based desktop application for 
 	          </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-          	<div class="align-self-stretch box p-4 text-center">
-          		<div class="icon d-flex align-items-center justify-content-center">
-          			<span class="icon-globe"></span>
-          		</div>
-          		<h3 class="mb-4">Download Resume</h3>
-	            <p><a href="images/Shafiqul Islam Nayem_CV.pdf" download="">resumelink</a></p>
-	          </div>
+          	
           </div>
 
 		  <div class="container">
@@ -519,7 +578,7 @@ The US-Bangla Airline Management System is a Java-based desktop application for 
 
 					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/thenameisnayeem"><span class="icon-linkedin"></span></a></li>
 					  
-					  <li class="ftco-animate"><a href="https://x.com/NameIsNayeem?t=wWGQP6K4lC0S5yDSPygofw&s=08"><span class="icon-twitter"></span></a></li>
+				 
 				      
 					</ul>
 				<br>
